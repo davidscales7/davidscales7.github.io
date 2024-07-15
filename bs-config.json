@@ -1,0 +1,7 @@
+{
+  "server": {
+    "baseDir": ["./src", "./dist"],
+    "index": "index.html"
+  },
+  "files": ["./src/**/*.{html,htm,css,js}", "./dist/bundle.js"]
+}
