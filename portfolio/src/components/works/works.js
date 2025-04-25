@@ -10,6 +10,8 @@ import LanguageLessonsScreenShot from '../../assets/ScreenshotOfLessons.png'
 import LanguageFlashCard1 from '../../assets/ScreenshotOfFlashcards1.png'
 import LanguageFlashCard2 from '../../assets/ScreenshotOfFlashcards2.png'
 import Lessons from '../../assets/ScreenshotOfLesson.png'
+import TopmanRugbyLandingPage from '../../assets/TopmanLandingPage.png'
+import TopmanRugbyWhatIsRugby from '../../assets/TopmanWhatIsRugby.png'
 
 import Telepharmacy from '../../assets/TelepharmacyMedicine.png';
 
@@ -27,6 +29,17 @@ const Works = () => {
             description: 'An app for learning new languages through lessons, quizzes and flashcards, they are able to be tracked with accolades for progression. Includes personal logins so users can track there own progress.',
             technologies: ['React', 'TypeScsript', 'MongoDB','GitHub',],
             lessons: 'I had to learn incorporating a back end fully with a front on for different uses not just for login and logging out. I also added in encrytption for passwords.'
+        },
+        
+        {
+            id:'Topman Rugby',
+            mainImg:TopmanRugbyLandingPage,
+            screenshots:[TopmanRugbyLandingPage,TopmanRugbyWhatIsRugby],
+            title:'Topman Rugby Charity',
+            description: 'A website to promote a charity and raise awareness of rugby and to spread the message of rugby worldwide.',
+            technologies:['React','Postgre SQL'],
+            lessons: "I had to learn in this project to communicate to the director of the charity and there vision for the site. Another lesson that I learnt was making API's and Backend work together inorder to host the website online and to let interested parties Sign up, Log in and also for Admins to Create, Edit and Delete posts."
+
         },
         {
             id: 'financeApp',
