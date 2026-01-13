@@ -16,6 +16,7 @@ const projects = [
   },
   {
     title: "Topman Rugby Charity Website",
+    url: "https://topmanrugby.com",
     summary:
       "A website built to promote a rugby charity and support community engagement.",
     points: [
