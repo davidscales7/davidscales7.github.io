@@ -1,8 +1,18 @@
 "use client";
 
+
+import React from "react";
 import { motion } from "framer-motion";
 
-const projects = [
+type Project = {
+  title: string;
+  summary: string;
+  points: string[];
+  tech: string[];
+  url?: string;
+};
+
+const projects: Project[] = [
   {
     title: "Language Learning Application",
     summary:
@@ -50,9 +60,7 @@ export default function Projects() {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <h2 className="text-2xl font-semibold mb-6">
-          Selected projects
-        </h2>
+        <h2 className="text-2xl font-semibold mb-6">Selected projects</h2>
 
         <p className="text-neutral-400 mb-16 max-w-xl">
           A selection of projects that reflect how I approach problem-solving,
@@ -72,9 +80,7 @@ export default function Projects() {
                 delay: index * 0.05,
               }}
             >
-              <h3 className="text-xl font-medium mb-3">
-                {project.title}
-              </h3>
+              <h3 className="text-xl font-medium mb-3">{project.title}</h3>
 
               <p className="text-neutral-400 mb-6 max-w-xl">
                 {project.summary}
@@ -86,11 +92,22 @@ export default function Projects() {
                 ))}
               </ul>
 
-              <div className="flex flex-wrap gap-3 text-sm text-neutral-400">
+              <div className="flex flex-wrap gap-3 text-sm text-neutral-400 mb-4">
                 {project.tech.map((t) => (
                   <span key={t}>{t}</span>
                 ))}
               </div>
+
+              {project.url && (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-sm text-neutral-200 hover:text-cyan-400 underline underline-offset-4"
+                >
+                  Visit live site →
+                </a>
+              )}
             </motion.div>
           ))}
         </div>
